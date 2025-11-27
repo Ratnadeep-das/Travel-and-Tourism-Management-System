@@ -1,0 +1,73 @@
+use travel;
+
+CREATE TABLE account (
+    Username VARCHAR(20),
+    Name VARCHAR(20),
+    Password VARCHAR(20),
+    Security VARCHAR(100),
+    Answer VARCHAR(100)
+);
+
+SELECT * FROM account;
+
+CREATE TABLE customer (
+    Username VARCHAR(20),
+    ID VARCHAR(30),
+    Number VARCHAR(30),
+    Name VARCHAR(20),
+    Gender VARCHAR(20),
+    Country VARCHAR(30),
+    Address VARCHAR(100),
+    Phone VARCHAR(15),
+    Email VARCHAR(30)
+);
+
+SELECT * FROM customer;
+
+CREATE TABLE hotel (
+    Name VARCHAR(50),
+    Cost_Per_Person VARCHAR(20),
+    AC VARCHAR(10),
+    Food VARCHAR(10)
+);
+
+INSERT INTO hotel (Name, Cost_Per_Person, AC, Food) VALUES
+('JW Mariott', '4800', '1500', '1600'),
+('Mandarin Oriental', '5000', '1800', '1900'),
+('Four Seasons', '4500', '1300', '1400'),
+('Radisson Blu', '4600', '1400', '1500'),
+('Classico', '4000', '1000', '1100'),
+('The Bay Club', '4200', '1200', '1300'),
+('Breeze Blow', '4700', '1100', '1200'),
+('The Taj', '4900', '1600', '1700'),
+('Happy Morning', '4300', '1700', '1800'),
+('River By The Desert', '4400', '1900', '2000');
+
+SELECT * FROM hotel;
+
+CREATE TABLE bookpackage (
+    Username VARCHAR(20),
+    Package VARCHAR(20),
+    Number_Of_People VARCHAR(20),
+    ID VARCHAR(30),
+    Number VARCHAR(30),
+    Phone VARCHAR(15),
+    Price VARCHAR(20)
+);
+
+SELECT * FROM bookpackage;
+
+CREATE TABLE bookhotel (
+    Username VARCHAR(20),
+    Name VARCHAR(20),
+    Number_Of_People VARCHAR(20),
+    Number_Of_Days VARCHAR(10),
+    AC VARCHAR(10),
+    Food VARCHAR(10),
+    ID VARCHAR(30),
+    Number VARCHAR(30),
+    Phone VARCHAR(15),
+    Price VARCHAR(20)
+);
+
+SELECT * FROM bookhotel;
